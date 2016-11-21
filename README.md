@@ -11,9 +11,9 @@ Having som fun with ping and gtts text-to-speech module
 ```
 py -m pip install -r requirements.txt
 ```
-3. Edit PingFun.py adding your phones IP to line 26 like so:
-```python3
-result = ping("your-phone-ip")
+3. Configure the script by running
+```
+py pingFun.py -c
 ```
 4. Run pingFun.py
 ```
