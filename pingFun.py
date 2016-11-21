@@ -23,14 +23,14 @@ print("Monitoring phone connection")
 
 try:
     while True:
-        result = ping("192.168.1.190")
+        result = ping("127.0.0.1")
         if result == True and previously_connected == False:
             print("Phone connected")
-            speaker.read('Welcome home.')
+            speaker.read('Welcome home, Nick.')
             previously_connected = True
         elif result == False and previously_connected == True:
             print("Your phone isn't connected")
-            speaker.read('Goodbye')
+            speaker.read('Goodbye, Nick.')
             previously_connected = False
         time.sleep(5)
 except KeyboardInterrupt:
